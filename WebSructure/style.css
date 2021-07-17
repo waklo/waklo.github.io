@@ -1,0 +1,58 @@
+.container {
+  width: 60%;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background-color: cyan;
+  height: 100px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 500px;
+}
+
+aside {
+  width: 13%;
+  height: 500px;
+}
+
+.left {
+  background-color: orange;
+}
+
+.right {
+  background-color: darkblue;
+}
+
+main {
+  background-color: red;
+  width: 70%;
+  height: 500px;
+  /*display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; */
+  position: relative; /* Ez azért kell ide, mert a blackbox absolute pozíciója az első nem static elemhez viszonyít. De ezt nem toljuk el semerre, marad a helyén. */
+}
+
+footer {
+  background-color: blue;
+  width: 100%;
+  height: 100px;
+}
+
+#blackbox {
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  /* margin-right: 20px;
+  margin-bottom: 20px; */
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
