@@ -78,3 +78,31 @@ h1.pszeu {
     list-style-type: none;
     margin:10px;
 }
+
+.gfa {
+    color: green;
+    font-weight: bolder;
+}
+
+.kep {
+    background-image: url('ImgViwer/images/polynesia-3021072_1280.jpg');
+    background-size:cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+}
+
+.keplink {
+    font-weight: bold;
+    text-decoration: none;
+    color: yellow;
+}
+
+.kep:hover {
+    background-image: url('ImgViwer/images/huzsi-a-rogbi-kiraly.jpg');
+    border: solid 3px black;
+}

@@ -1,0 +1,131 @@
+main {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bigView {
+    display: flex;
+
+}
+
+#left {
+    width: 30px;
+    height: 360px;
+    background-color: lightgray;
+}
+
+#right {
+    width: 30px;
+    height: 360px;
+    background-color: lightgray;
+
+}
+
+#left:hover, #right:hover {
+    opacity: 50%;
+}
+
+.turnBack {
+    transform: rotate(0.5turn);
+}
+
+#photo {
+    max-height: 360px;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.imgFrame {
+    height: 360px;
+    width: 640px;
+    position: relative;
+    background-color: black;
+    display:flex;
+    align-content: center;
+
+}
+
+.gray-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: 50%;
+    width: 640px;
+    height: 90px;
+
+}
+
+#title {
+    color: white;
+    margin: 5px 10px;
+    padding:0;
+    font-family: 'Special Elite', cursive;
+    font-weight: bold;
+}
+
+#description {
+    color: white;
+    margin: 0px 10px;
+    padding:0;
+    font-family: 'Mukta Vaani', sans-serif;
+}
+
+.browser {
+    border: 10px solid rgb(238, 209, 167);
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blanchedalmond;
+    padding: 0px 10px;
+    
+}
+
+.thumb {
+    height: 100px;
+    width: 100px;
+    margin: 20px 10px;
+    background-size: cover;
+    border: solid 3px rgb(223, 186, 67);
+    border-radius: 3px;
+    box-shadow: darkslategrey 5px 5px;
+    position: relative;
+}
+
+.thumb.active {
+    border: solid 5px silver;
+    box-shadow: dimgrey 3px 3px;
+}
+
+.tiptext {
+    visibility: hidden;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    position: absolute;
+    text-align: center;
+    padding: 5px;
+    width: 90px; /* A paddinggal együtt adja ki a képkocka 100-as szélességét */
+    bottom: 105%;
+    left: 50%;
+    margin-left: -50px; /* a kiskép kocka fele 100/2 */
+}
+
+.thumb:hover .tiptext {
+    visibility: visible;
+}
+
+/* Nyíl a tooltiphez: https://www.w3schools.com/css/css_tooltip.asp */
+
+.tiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* A tiptext alja (a tiptexthez viszonyítva!)*/
+    left:50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
